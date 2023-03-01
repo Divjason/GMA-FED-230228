@@ -1,0 +1,71 @@
+.intro {
+  position: relative;
+  background-image: url('../images/intro-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 배경 이미지를 반투명 검정으로 가리기 */
+.intro_dark {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: rgba(0, 0, 0, 0.67);
+  text-align: center;
+}
+.intro_type {
+  display: inline-flex;
+  gap: 0.32em;
+  font-family: var(--font-code);
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+}
+@keyframes blink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.intro_type .underscore {
+  animation-name: blink;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-duration: alternate;
+}
+div[class^="intro_title"] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: var(--color-main);
+  clip-path: polygon(100% 90%, 100% 100%, 0 100%, 0 0);
+}
+div.intro_title--flip {
+  clip-path: polygon(100% 0, 100% 100%, 0 0, 0 100%);
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .intro {
+    height: 100vh;
+  }
+  .intro_type {
+    margin-top: 36vh;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .intro {
+    height: 500px;
+  }
+  .intro_type {
+    margin-top: 200px;
+    align-items: center;
+  }
+  .intro_type span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.25em;
+  }
+}
