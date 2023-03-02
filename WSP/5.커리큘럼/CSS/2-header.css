@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  position: sticky;
+
+  /* 스크롤업되는 컨텐츠 위로 올라오도록 */
+  z-index: 2;
+
+  top: 0;
+  height: var(--height-toolbar);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-main);
+
+  color: white;
+}
+
+.header_homelink {
+  display: inline-block;
+  padding: 0 24px;
+  height: var(--height-toolbar);
+  line-height: var(--height-toolbar);
+  cursor: pointer;
+}
+
+.header_logo {
+  height: 48px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.header_nav-item {
+  font-size: var(--font-size-larger);
+}
+
+.header_nav-item a {
+  /* 클릭영역 확대 */
+  display: inline-block;
+  height: var(--height-toolbar);
+  line-height: var(--height-toolbar);
+}
+
+@media (max-width: 768px) {
+  .header_nav {
+    display: none;
+  }
+  .header_menu-btn {
+    all: unset;
+    display: block;
+    width: var(--height-toolbar);
+    height: var(--height-toolbar);
+    background-image: url(../images/menu-button.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header_menu-btn:checked {
+    background-color: var(--color-dark);
+  }
+  .header_menu-btn:checked + .header_nav {
+    display: inherit;
+    position: absolute;
+    top: var(--height-toolbar);
+    right: 0;
+    background-color: var(--color-dark);
+    padding-bottom: 1em;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .header_nav-item {
+    width: 100vw;
+    text-align: center;
+  }
+  .header_nav-item a {
+    width: 100vw;
+  }
+  .header_nav-item:not(:last-child) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+@media (min-width: 769px) {
+  .header_nav-item {
+    display: inline-block;
+    position: relative;
+  }
+  .header_nav-item:last-child {
+    margin-right: 1.6em;
+  }
+  .header_nav-item a {
+    padding: 0 0.8em;
+  }
+  .header_nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: white;
+    transition: all 350ms;
+  }
+  .header_nav-item:hover::after {
+    left: 0;
+    width: 100%;
+    height: 8px;
+  }
+  .header_menu-btn {
+    display: none;
+  }
+}

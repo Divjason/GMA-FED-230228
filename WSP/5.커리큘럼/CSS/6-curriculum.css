@@ -1,0 +1,132 @@
+#curriculum {
+  background-color: var(--color-dark);
+}
+
+#curriculum .section_title {
+  color: white;
+}
+
+.curriculum {
+  display: inline-block;
+  position: relative;
+}
+
+.curriculum_list {
+  display: inline-flex;
+  font-size: var(--font-size-larger);
+  font-weight: 100;
+  text-align: left;
+  color: white;
+}
+
+.curriculum_list li {
+  font-size: 1.1em;
+}
+
+.curriculum_list li::before {
+  content: '';
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+  width: 30px; height: 30px;
+  vertical-align: middle;
+
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 4px solid white;
+  background-color: var(--color-dark);
+}
+
+.curriculum_progress {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .curriculum_list {
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  .curriculum_list li {
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .curriculum_list li span {
+    margin-left: 1.6em;
+  }
+  .curriculum_progress {
+    top: 108px;
+    left: 12px;
+    width: 0px;
+    height: 500px;
+    border-left: 6px dotted white;
+    transform: skewY(-30deg);
+  }
+}
+
+@media (min-width: 769px) {
+  #curriculum {
+    grid-column: 1 / -1;
+    padding-bottom: 88px;
+  }
+  .curriculum_list {
+    margin: 56px 0 56px 40px;
+  }
+  .curriculum_list li {
+    position: relative;
+    width: 200px; height: 120px;
+  }
+  .curriculum_list li span {
+    /* 글자수에 관계없이 통일된 위치로 기울어지도록 */
+    display: inline-block;
+    width: 164px;
+
+    position: absolute;
+    z-index: 1;
+    top: 84px;
+    left: 14px;
+    opacity: 0.5;
+    transform: rotate(45deg);
+  }
+  .curriculum_list li:hover span {
+    opacity: 1;
+  }
+  .curriculum_progress {
+    top: 70px;
+    left: 56px;
+    width: 1000px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .curriculum_progress::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    background-color: var(--color-sub);
+    width: 0; height: 8px;
+    transition: all 1s;
+  }
+  .curriculum_list li:hover::before {
+    background-color: var(--color-sub);
+  }
+  .curriculum_list li:nth-child(2):hover
+  ~ .curriculum_progress::after {
+    width: 200px;
+  }
+  .curriculum_list li:nth-child(3):hover
+  ~ .curriculum_progress::after {
+    width: 400px;
+  }
+  .curriculum_list li:nth-child(4):hover
+  ~ .curriculum_progress::after {
+    width: 600px;
+  }
+  .curriculum_list li:nth-child(5):hover
+  ~ .curriculum_progress::after {
+    width: 800px;
+  }
+  .curriculum_list li:nth-child(6):hover
+  ~ .curriculum_progress::after {
+    width: 1000px;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px" y="0px" viewBox="0 0 48 48"
+  style="enable-background:new 0 0 48 48;"
+  xml:space="preserve">
+
+<!-- 아래에 색상값과 d값을 넣으세요! -->
+<path 
+  style="fill: #FFFFFF;"
+  d="M20 46V28H14V4H34L26 22H34Z"
+/>
+</svg>

@@ -1,0 +1,134 @@
+.html-css {
+  margin: 56px 0;
+  display: inline-flex;
+  gap: 56px;
+}
+
+.html-css_desc {
+  margin-top: 1.6em;
+  font-size: var(--font-size-text);
+  color: var(--color-text);
+}
+
+.html-css_desc strong {
+  font-weight: bold;
+}
+
+.html-css_title {
+  font-size: var(--font-size-subtitle);
+  font-weight: 100;
+}
+
+._html .html-css_title em {
+  color: #F16528;
+}
+
+._css .html-css_title em {
+  color: #2965F1;
+}
+
+.html-css_spec {
+  margin-top: 1.6em;
+}
+
+.html-css_spec dd {
+  margin-right: 1.2em;
+  font-size: var(--font-size-larger);
+  color: var(--color-lighter);
+}
+
+/* 초록색 체크표시 */
+.html-css_spec dd::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.4em;
+  width: 12px;
+  height: 6px;
+  border-left: 4px solid var(--color-sub);
+  border-bottom: 4px solid var(--color-sub);
+  vertical-align: 0.2em;
+  transform: rotate(-45deg);
+}
+
+.html-css_thumb {
+  position: relative;
+}
+
+/* 로고 아래 그림자 */
+.html-css_thumb::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  height: 10%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* 둥둥 오르내리는 효과 */
+@keyframes logo-hover {
+  from { transform: translateY(0); }
+  to { transform: translateY(10px); }
+}
+
+.html-css_logo {
+  animation-name: logo-hover;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* 짙고 옅어지는 애니메이션 */
+@keyframes logo-shadow {
+  from { opacity: 0.08; }
+  to { opacity: 0.24; }
+}
+
+.html-css_thumb::after {
+  animation-name: logo-shadow;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media (max-width: 768px) {
+  #html {
+    border-bottom: 4px solid var(--color-light-bg);
+  }
+  .html-css {
+    flex-direction: column;
+  }
+  .html-css_logo {
+    width: 50%;
+  }
+  .html-css_content {
+    text-align: center;
+  }
+  .html-css_title div {
+    display: inline-block;
+    text-align: left;
+  }
+  .html-css_thumb::after {
+    left: 25%;
+    bottom: -16%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  #html {
+    border-right: 4px solid var(--color-light-bg);
+  }
+  .html-css_logo {
+    width: 144px;
+  }
+  .html-css_content {
+    text-align: left;
+  }
+  .html-css_thumb::after {
+    left: calc(50% - 72px);
+    bottom: -24px;
+    width: 144px;
+  }
+}
