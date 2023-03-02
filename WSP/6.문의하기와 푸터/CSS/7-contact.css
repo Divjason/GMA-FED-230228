@@ -1,0 +1,199 @@
+#contact {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--color-light-bg);
+}
+
+.contact__tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--font-size-larger);
+}
+
+/* 라디오 버튼 커스터마이즈 */
+input[type=radio] {
+  all: unset;
+  display: inline-block;
+  padding: 0.8em 4em;
+  background-color: white;
+  cursor: pointer;
+}
+input[type=radio]:checked {
+  color: white;
+  background-color: var(--color-main);
+}
+#ct_1 { border-radius: 12px 0 0 12px; }
+#ct_1::after { content: '연락처 보기'; }
+#ct_2 { border-radius: 0 12px 12px 0; }
+#ct_2::after { content: '메시지 남기기'; }
+.contact {
+  margin-top: 3em;
+}
+
+.contact__tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--font-size-larger);
+}
+
+/* 라디오 버튼 커스터마이즈 */
+input[type=radio] {
+  all: unset;
+  display: inline-block;
+  padding: 0.8em 4em;
+  background-color: white;
+  cursor: pointer;
+}
+input[type=radio]:checked {
+  color: white;
+  background-color: var(--color-main);
+}
+#ct_1 { border-radius: 12px 0 0 12px; }
+#ct_1::after { content: '연락처 보기'; }
+#ct_2 { border-radius: 0 12px 12px 0; }
+#ct_2::after { content: '메시지 남기기'; }
+
+.contact__slides {
+  margin: 1.6em 0;
+  width: 100vw;
+  overflow: hidden;
+}
+.contact__slide-con {
+  display: flex;
+  width: 200vw;
+  transition: margin-left 500ms;
+}
+.contact__slide {
+  width: 100vw;
+}
+#ct_1:checked ~ .contact__slides .contact__slide-con {
+  margin-left: 0;
+}
+#ct_2:checked ~ .contact__slides .contact__slide-con {
+  margin-left: -100vw;
+}
+
+.contact__contacts {
+  margin: 0 auto;
+  text-align: left;
+  color: var(--color-text);
+}
+.contact__contacts th {
+  padding-right: 3em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: right;
+  color: var(--color-dark);
+  border-right: 4px solid var(--color-light-bd);
+}
+.contact__contacts a:hover {
+  color: var(--color-emph);
+  text-decoration: underline;
+}
+.contact__contacts img {
+  margin-right: 0.1em;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.contact__leave {
+  display: inline-flex;
+  margin-top: 1em;
+  gap: 8px;
+}
+.contact__leave textarea,
+.contact__leave input[type=email] {
+  margin: 0;
+  font-size: var(--font-size-text);
+  border: 2px solid var(--color-light-bd);
+}
+.contact__leave textarea::placeholder,
+.contact__leave input[type=email]::placeholder {
+  color: var(--color-lighter);
+}
+
+/* 텍스트 인풋의 경우 focus-visible이 focus를 override */
+.contact__leave textarea:focus-visible,
+.contact__leave input[type=email]:focus-visible {
+  border: 2px solid var(--color-sub);
+  outline: none;
+}
+.contact__leave div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact__leave textarea {
+  resize: none;
+  padding: 0.6em;
+}
+.contact__leave input[type=email] {
+  padding: 0 0.6em;
+  height: 48px;
+  line-height: 48px;
+}
+.contact__leave button {
+  all: unset;
+  height: 64px;
+  line-height: 64px;
+  color: white;
+  background-color: var(--color-sub);
+  cursor: pointer;
+  transition: all 350ms;
+}
+.contact__leave button:hover {
+  opacity: 0.8;
+}
+.contact__leave button:focus-visible {
+  outline: 4px solid var(--color-sub);
+}
+
+@media (max-width: 768px) {
+  input[type=radio] {
+    padding: 0.8em 2em;
+  }
+  #ct_1::after { content: '연락처'; }
+  #ct_2::after { content: '메시지'; }
+  .contact__contacts th {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .contact__contacts tr > * {
+    padding: 0.6em;
+  }
+  .contact__contacts td::before {
+    content: '▶';
+    margin-right: 0.6em;
+    font-size: 0.67em;
+    opacity: 0.5;
+  }
+  .contact__leave {
+    flex-direction: column;
+  }
+  .contact__leave textarea,
+  .contact__leave input[type=email] {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 769px) {
+  #contact {
+    grid-column: 1 / -1;
+  }
+  .contact__contacts {
+    border-spacing: 3em 1em;
+  }
+  .contact__leave textarea,
+  .contact__leave input[type=email] {
+    width: 360px;
+  }
+}

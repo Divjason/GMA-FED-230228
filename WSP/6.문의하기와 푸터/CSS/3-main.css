@@ -1,0 +1,23 @@
+.section {
+  padding: 64px 16px;
+  text-align: center;
+}
+.section_tag {
+  font-size: var(--font-size-tag);
+  color: var(--color-sub);
+}
+.section_title {
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  color: var(--color-text);
+}
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

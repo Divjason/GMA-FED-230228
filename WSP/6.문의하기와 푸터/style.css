@@ -1,0 +1,92 @@
+@import url('./CSS/1-intro.css');
+@import url('./CSS/2-header.css');
+@import url('./CSS/3-main.css');
+@import url('./CSS/4-about.css');
+@import url('./CSS/5-html-css.css');
+@import url('./CSS/6-curriculum.css');
+@import url('./CSS/7-contact.css');
+@import url('./CSS/8-footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* ==== 변수구간 ==== */
+:root {
+  --color-main: #FF4200;
+  --color-sub: #00A200;
+  --color-dark: #2F4858;
+  --color-emph: #F10F5F;
+  --color-text: #281812;
+  --color-lighter: #DC9C86;
+  --color-light-bd: #FFE6D6;
+  --color-light-bg: #FFF5ED;
+
+  --font-code: 'Nanum Gothic', monospace;;
+
+  --font-size-title: 44px;
+  --font-size-subtitle: 32px;
+  --font-size-tag: 26px;
+  --font-size-larger: 20px;
+  --font-size-text: 18px;
+
+  --height-toolbar: 72px;
+}
+
+/* ==== 리셋구간 ==== */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  /* 개발용 설정 */
+  min-height: 150vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong, em {
+  font-size: inherit;
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl { margin: 0; }
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure { margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th { font-weight: normal; }
+
+address { font-style: inherit; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
