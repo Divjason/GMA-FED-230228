@@ -1,0 +1,70 @@
+/* 초기화 */
+* {
+  margin: 0; padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 내비게이션 스타일 */
+nav {
+  background-color: #f8f2d4;
+  width: 100%; height: 50px;
+  margin: 0; padding: 0;
+  text-align: center;
+}
+a.nav-btn {
+  display: inline-block;
+  width: 20%; height: 50px;
+  margin: 0; line-height: 50px;
+}
+nav a:link, nav a:visited {
+  color: #000000;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* 본문영역 */
+section {
+  width: 100%; height: 900px;
+  margin: 0 auto; padding: 20px;
+  /*border: 1px solid black;*/
+}
+section > h2 {
+  text-align: center;
+  line-height: 800px;
+
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 1px 2px 1px #000;
+
+  text-transform: uppercase;
+}
+.page1 {
+  background: url('https://cromidi.cafe24.com/onepage_2/eu.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page2 {
+  background: url('https://cromidi.cafe24.com/onepage_2/us.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page3 {
+  background: url('https://cromidi.cafe24.com/onepage_2/ch.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page4 {
+  background: url('https://cromidi.cafe24.com/onepage_2/jp.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
