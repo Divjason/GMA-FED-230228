@@ -1,0 +1,131 @@
+/* 초기화 */
+* {
+  margin: 0; padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 헤더 */
+#main_header {
+  height: 45px;
+  background: url('https://cromidi.cafe24.com/mobile/header_background.png');
+
+  position: relative;
+  text-align: center;
+  line-height: 45px;
+}
+#main_header > h1 {
+  color: white;
+}
+#main_header > a, #main_header > label {
+  display: block;
+  height: 32px;
+  position: absolute;
+} 
+#main_header > a.left {
+  left: 5px; top: 7px;
+  width: 62px; height: 32px;
+  background: url('https://cromidi.cafe24.com/mobile/css_sprites.png') -0 -0;
+}
+#main_header > label.right {
+  right: 5px; top: 7px;
+  width: 32px; height: 32px;
+  background: url('https://cromidi.cafe24.com/mobile/css_sprites.png') -62px -0;
+}
+/* 토글목록 */
+#toggle {
+  display: none;
+}
+#toggle + #wrap > #toggle_gnb_wrap {
+  display: none;
+}
+#toggle:checked + #wrap > #toggle_gnb_wrap {
+  display: block;
+}
+#toggle_gnb_wrap {
+  background: #363636;
+  padding: 15px;
+}
+#toggle_gnb {
+  background: #ffffff;
+  padding: 5px;
+}
+#toggle_gnb > ul > #toggle_top {
+  overflow: hidden;
+  text-align: center;
+}
+#toggle_gnb > ul > #toggle_top > li {
+  width: 70px; display: inline-block;
+}
+#toggle_gnb > ul > #toggle_top > li > a {
+  color: black;
+}
+#toggle_gnb > ul > #toggle_bottom {
+  overflow: hidden;
+  text-align: center;
+}
+#toggle_gnb > ul > #toggle_bottom > li {
+  width: 70px; display: inline-block;
+}
+#toggle_gnb > ul > #toggle_bottom > li > a {
+  color: black;
+}
+/* 네비게이션(1) */
+#top_gnb {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #b42111;
+}
+#top_gnb > div > a {
+  float: left;
+  width: 25%;
+
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+}
+/* 네비게이션(2) */
+#bottom_gnb {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+#bottom_gnb > div {
+  display: table-cell;
+  position: relative;
+}
+#bottom_gnb > div > a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+#bottom_gnb > div > a::before {
+  content: "";
+  top: 9px; left: -1px;
+  width: 1px; height: 15px;
+  border-left: 1px solid black;
+  display: block;
+  position: absolute;
+}
+/* 본문 */
+#section_header {
+  padding: 20px;
+}
+#section_article{
+  padding: 20px;
+}
+/* 푸터 */
+#main_footer {
+  padding: 10px;
+  border-top: 3px solid black;
+  text-align: center;
+}
