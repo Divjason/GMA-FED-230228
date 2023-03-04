@@ -1,0 +1,91 @@
+/* 초기화 */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+/* 배경화면 */
+body {
+  background: url('https://cromidi.cafe24.com/responsive_2/windmill.jpg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* 메뉴버튼 */
+a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 0 #283744;
+}
+
+/* 작은화면구조 */
+nav {
+  width: 100%; height: auto;
+  background-color: #34495e;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+}
+nav > ul {
+  display: none;
+  height: auto;
+}
+nav > ul > li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #576979;
+}
+nav > ul > li > a {
+  line-height: 50px;
+}
+
+/* 트리거메뉴 */
+nav #trigger {
+  display: block;
+  background-color: #283744;
+  width: 100%;
+  padding-left: 15px;
+  line-height: 40px;
+  position: relative;
+}
+nav a#trigger::after {
+  display: inline-block;
+  content: "";
+  background: url('https://cromidi.cafe24.com/responsive_2/nav.png') no-repeat;
+  width: 30px; height: 30px;
+  position: absolute;
+  top: 10px; right: 10px;
+}
+
+/* 미디어쿼리 중단점 */
+@media screen and (min-width:920px) {
+  nav {
+    height: 40px;
+    border-bottom: 2px solid #34495e;
+  }
+  nav > ul {
+    display: block;
+    width: 900px; height: 40px;
+    padding: 0; margin: 0 auto;
+  }
+  nav > ul > li {
+    display: inline-block;
+    width: 150px;
+    border-bottom: 0;
+    border-right: 1px solid #576979;
+    margin-right: -6px;
+  }
+  nav > ul > li:first-child {
+    border-left: 1px solid #576979;
+  }
+  nav > ul > li > a {
+    font-size: 1em;
+    line-height: 40px;
+  }
+  nav a#trigger {
+    display: none;
+  }
+}
