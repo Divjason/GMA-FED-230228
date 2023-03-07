@@ -1,0 +1,283 @@
+/* Reset */
+* {
+  margin: 0; padding: 0;
+}
+body {
+  width: 980px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0;
+}
+
+/* Header */
+#main_header {
+  position: relative;
+}
+#main_header .logo {
+  position: absolute;
+  left: 15px; top: 10px;
+}
+#main_header .login_menu {
+  position: absolute;
+  right: 0; top: 10px;
+}
+.login_menu > span > a {
+  display: inline-block;
+  width: 70px;
+  padding-left: 10px;
+}
+
+/* Aside */
+body {
+  position: relative;
+}
+#global_aside {
+  position: relative;
+  left: 990px; top: 75px;
+  width: 90px;
+}
+#global_aside > a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Top_gnb */
+#top_gnb {
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+}
+#top_gnb .menu {
+  float: left;
+  width: 140px; height: 50px;
+  background: url('https://cromidi.cafe24.com/coupang/css_sprites_top.png');
+}
+/* ========== Top_gnb : click_before ========== */
+#top_gnb .item1 {
+  background-position: 0 0;
+}
+#top_gnb .item2 {
+  background-position: 0 -50px;
+}
+#top_gnb .item3 {
+  background-position: 0 -100px;
+}
+#top_gnb .item4 {
+  background-position: 0 -150px;
+}
+#top_gnb .item5 {
+  background-position: 0 -200px;
+}
+#top_gnb .item6 {
+  background-position: 0 -250px;
+}
+#top_gnb .item7 {
+  background-position: 0 -300px;
+}
+/* ========== Top_gnb : Hover ========== */
+#top_gnb > .item1:hover {
+  background-position: 0 -350px;
+}
+#top_gnb > .item2:hover {
+  background-position: 0 -400px;
+}
+#top_gnb > .item3:hover {
+  background-position: 0 -450px;
+}
+#top_gnb > .item4:hover {
+  background-position: 0 -500px;
+}
+#top_gnb > .item5:hover {
+  background-position: 0 -550px;
+}
+#top_gnb > .item6:hover {
+  background-position: 0 -600px;
+}
+#top_gnb > .item7:hover {
+  background-position: 0 -650px;
+}
+/* ========== Top_gnb : Click ========== */
+#top_gnb > .item1:active {
+  background-position: 0 0;
+}
+#top_gnb > .item2:active {
+  background-position: 0 -50px;
+}
+#top_gnb > .item3:active {
+  background-position: 0 -100px;
+}
+#top_gnb > .item4:active {
+  background-position: 0 -150px;
+}
+#top_gnb > .item5:active {
+  background-position: 0 -200px;
+}
+#top_gnb > .item6:active {
+  background-position: 0 -250px;
+}
+#top_gnb > .item7:active {
+  background-position: 0 -300px;
+}
+
+/* Bottom_gnb */
+#bottom_gnb {
+  overflow: hidden;
+  position: absolute;
+  top: 125px;
+}
+#bottom_gnb .menu {
+  float: left;
+  width: 98px; height: 80px;
+  background: url('https://cromidi.cafe24.com/coupang/css_sprites_bottom.png');
+}
+/* ========== Bottom_gnb : click_before ========== */
+#bottom_gnb .item1 {
+  background-position: 0 0;
+}
+#bottom_gnb .item2 {
+  background-position: 0 -80px;
+}
+#bottom_gnb .item3 {
+  background-position: 0 -160px;
+}
+#bottom_gnb .item4 {
+  background-position: 0 -240px;
+}
+#bottom_gnb .item5 {
+  background-position: 0 -320px;
+}
+#bottom_gnb .item6 {
+  background-position: 0 -400px;
+}
+#bottom_gnb .item7 {
+  background-position: 0 -480px;
+}
+#bottom_gnb .item8 {
+  background-position: 0 -560px;
+}
+#bottom_gnb .item9 {
+  background-position: 0 -640px;
+}
+#bottom_gnb .item10 {
+  background-position: 0 -720px;
+}
+/* ========== Bottom_gnb : Hover ========== */
+#bottom_gnb > .item1:hover {
+  background-position: 0 -800px;
+}
+#bottom_gnb > .item2:hover {
+  background-position: 0 -880px;
+}
+#bottom_gnb > .item3:hover {
+  background-position: 0 -960px;
+}
+#bottom_gnb > .item4:hover {
+  background-position: 0 -1040px;
+}
+#bottom_gnb > .item5:hover {
+  background-position: 0 -1120px;
+}
+#bottom_gnb > .item6:hover {
+  background-position: 0 -1200px;
+}
+#bottom_gnb > .item7:hover {
+  background-position: 0 -1280px;
+}
+#bottom_gnb > .item8:hover {
+  background-position: 0 -1440px;
+}
+#bottom_gnb > .item9:hover {
+  background-position: 0 -1520px;
+}
+#bottom_gnb > .item10:hover {
+  background-position: 0 -1360px;
+}
+/* ========== Bottom_gnb : Click ========== */
+#bottom_gnb > .item1:active {
+  background-position: 0 0;
+}
+#bottom_gnb > .item2:active {
+  background-position: 0 -80px;
+}
+#bottom_gnb > .item3:active {
+  background-position: 0 -160px;
+}
+#bottom_gnb > .item4:active {
+  background-position: 0 -240px;
+}
+#bottom_gnb > .item5:active {
+  background-position: 0 -320px;
+}
+#bottom_gnb > .item6:active {
+  background-position: 0 -400px;
+}
+#bottom_gnb > .item7:active {
+  background-position: 0 -480px;
+}
+#bottom_gnb > .item8:active {
+  background-position: 0 -560px;
+}
+#bottom_gnb > .item9:active {
+  background-position: 0 -640px;
+}
+#bottom_gnb > .item10:active {
+  background-position: 0 -720px;
+}
+
+/* Detail list */
+#detail_list {
+  overflow: hidden;
+  position: absolute;
+  top: 205px;
+  background-color: #000;
+  width: 980px; height: 320px;
+  float: left;
+  text-align: center;
+}
+#detail_list ul {
+  float: left;
+  width: 180px; 
+  padding-left: 10px;
+}
+#detail_list li {
+  height: 15px;
+  margin-top: 10px;
+  padding: 3px 5px;
+  color: #f3f3f3;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+#detail_list li.header {
+  padding-left: 15px;
+}
+#detail_list p {
+  font-weight: bold;
+  color: #48c5ff;
+}
+/* Content */
+#content {
+  margin-top: -110px;
+}
+
+#product_section > #product_article {
+  float: left;
+  width: 795px;
+}
+
+#product_section > #product_aside {
+  float: right;
+  width: 170px;
+  padding: 0;
+}
