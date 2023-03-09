@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Info</title>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="https://cromidi.cafe24.com/movie/style.css">
+</head>
+<body>
+  <!-- Title -->
+  <hgroup id="title">
+    <h1 data-name="information">Information</h1>
+    <h1 data-name="character">Character</h1>
+    <h1 data-name="multimedia">Multimedia</h1>
+  </hgroup>
+
+  <!-- Container -->
+  <section id="container">
+    <div id="main" data-name="main" class="active">
+      <img src="https://cromidi.cafe24.com/movie/Middle_Foreground.png" alt="">
+    </div>
+    <div id="information" data-name="information">
+      <img src="https://cromidi.cafe24.com/movie/Information_Image.png" alt="">
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ab, libero, nostrum assumenda nam iusto laboriosam nemo iste natus optio temporibus porro quis perferendis pariatur modi est, magni velit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ab, libero, nostrum assumenda nam iusto laboriosam nemo iste natus optio temporibus porro quis perferendis pariatur modi est, magni velit doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ab, libero, nostrum assumenda nam iusto laboriosam nemo iste natus optio temporibus porro quis perferendis pariatur modi est, magni velit doloribus.</p>
+      </div>
+    </div>
+    <div id="character" data-name="character">
+      <a href="#">Left Button</a>
+      <a href="#">Right Button</a>
+      <article class="show">
+        <h1>Princess Ann</h1>
+        <img src="https://cromidi.cafe24.com/movie/Character_Text_1.png" alt="">
+        <img src="https://cromidi.cafe24.com/movie/Character_1.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum placeat sed at rem fuga dolor dolorum id quidem, iste accusamus provident iure voluptas odit voluptatibus totam, repellat perferendis modi?</p>
+      </article>
+      <article>
+        <h1>Joe Bradley</h1>
+        <img src="https://cromidi.cafe24.com/movie/Character_Text_2.png" alt="">
+        <img src="https://cromidi.cafe24.com/movie/Character_2.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum placeat sed at rem fuga dolor dolorum id quidem, iste accusamus provident iure voluptas odit voluptatibus totam, repellat perferendis modi?</p>
+      </article>
+      <article>
+        <h1>Radovich</h1>
+        <img src="https://cromidi.cafe24.com/movie/Character_Text_3.png" alt="">
+        <img src="https://cromidi.cafe24.com/movie/Character_3.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate laborum placeat sed at rem fuga dolor dolorum id quidem, iste accusamus provident iure voluptas odit voluptatibus totam, repellat perferendis modi?</p>
+      </article>
+    </div>
+    <div id="multimedia" data-name="multimedia">
+      <video src="#" width="940" height="500px" controls="controls"></video>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="main_navigation">
+    <ul>
+      <li><a href="#" data-target="information">Move Info</a></li>
+      <li><a href="#" data-target="character">Multimedia</a></li>
+      <li><a href="#" data-target="multimedia">Charater</a></li>
+      <li><a href="#">Download</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
