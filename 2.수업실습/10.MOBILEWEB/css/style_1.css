@@ -1,0 +1,329 @@
+/* Import Local CSS */
+@import url('/css/reset.css');
+@import url('/css/variables.css');
+
+/* Common CSS */
+* {
+  font-family: var(--primary-kr);
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  color: var(--dark-black);
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+[class*=content] {
+  padding: 20px;
+  margin-bottom: 65px;
+}
+
+/* Logo CSS */
+.logo {
+  font-family: var(--logo-en);
+}
+
+/* Button CSS */
+.btn-primary {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+}
+
+/* Main Header CSS */
+.main-header {
+  height: 80px;
+  background-color: var(--crimson);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-back {
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  flex: 1;
+}
+.logo {
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  flex: 6;
+}
+
+/* GNB CSS */
+.gnb {
+  border-top: 1px solid var(--cloudy-gray);
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.gnb a {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gnb a .bi {
+  font-size: 22px;
+}
+.gnb a:nth-child(1) .bi,
+.gnb a:nth-child(4) .bi {
+  font-size: 26px;
+}
+.gnb a span {
+  display: block;
+  font-size: 13px;
+}
+
+/* Counter CSS */
+.user-alarm {
+  font-size: 22px;
+  color: #fff;
+  flex: 1;
+}
+.cart-alarm b,
+.user-alarm span {
+  position: relative;
+  width: 30px;
+  margin: auto;
+}
+.cart-alarm b em,
+.user-alarm span em {
+  position: absolute;
+  right: 0; top: 0;
+
+  width: 15px;
+  height: 15px;
+  background-color: var(--royalblue);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-alarm b em,
+.user-alarm span em {
+  color: #fff;
+  top: 0; right: -3px;
+}
+.cart-alarm b em::before,
+.user-alarm span em::before {
+  content: attr(data-count);
+  font-style: normal;
+  font-size: 10px;
+  font-family: var(--primary-en);
+}
+
+/* ### Signin Html ### */
+.signin {
+  height: 750px;
+}
+.signin-photo {
+  background: url('/images/signin-header.jpg') no-repeat;
+  height: 250px;
+}
+.signin-header {
+  text-align: center;
+}
+.signin-header .logo {
+  font-size: 26px;
+  margin: 10px 0;
+}
+.signin-header .maintitle {
+  color: var(--dark-black);
+}
+.signin-header p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.input-field input {
+  border: 1px solid var(--cloudy-gray);
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 30px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.input-field input:focus {
+  outline: none;
+  border-color: var(--yellowgreen);
+}
+.input-field input::placeholder {
+  color: var(--silver-gray);
+  transition: 0.35s;
+}
+.input-field input:focus::placeholder {
+  opacity: 0;
+}
+.status {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-chk label input[type=checkbox] {
+  display: none;
+}
+.custom-chk label input[type=checkbox] + em {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  transform: translateY(2px);
+  margin-right: 3px;
+}
+.custom-chk label input[type=checkbox] + em::before {
+  content: '\F26B';
+  font-family: bootstrap-icons;
+  font-style: normal;
+  color: var(--light-gray);
+  display: inline-block;
+}
+.custom-chk label input[type=checkbox]:checked + em::before {
+  color: var(--crimson);
+}
+.btn-signin {
+  background-color: var(--yellowgreen);
+}
+.join-member {
+  text-align: center;
+  margin: 15px 0;
+}
+.join-member a {
+  text-decoration: underline;
+}
+.easy-signin {
+  text-align: center;
+}
+.easy-signin span {
+  color: var(--light-gray);
+}
+.social-btn {
+  margin: 10px 0;
+}
+.social-btn a {
+  margin: 3px;
+}
+
+/* ### Signup Html ### */
+.signup-field {
+  margin-bottom: 10px;
+}
+.signup-field span {
+  display: block;
+}
+.signup-field span em {
+  color: var(--crimson);
+}
+.id-pw input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--cloudy-gray);
+  padding: 8px 0;
+}
+.id-pw input::placeholder {
+  color: var(--light-gray);
+}
+.birth div {
+  display: flex;
+  gap: 10px;
+}
+.birth div > *,
+.phone div > * {
+  width: 33.33%;
+  border: 1px solid var(--cloudy-gray);
+  border-radius: 3px;
+  padding: 7px;
+  text-align: center;
+  color: var(--light-gray);
+}
+.phone div {
+  display: flex;
+  gap: 10px;
+}
+.phone div input {
+  flex: 7;
+}
+.btn-getcode {
+  flex: 3;
+}
+.agree-term {
+  margin-bottom: 15px;
+}
+.agree-term label {
+  display: block;
+  font-size: 13px;
+}
+.btn-signup {
+  background-color: var(--crimson);
+}
+.phone span,
+.birth span {
+  margin-bottom: 5px;
+}
+.id-pw input:focus,
+.birth div > *:focus,
+.phone div input:focus {
+  outline: none;
+  border-color: var(--yellowgreen);
+}
+.id-pw input:focus::placeholder,
+.birth div > *:focus::placeholder,
+.phone div input:focus::placeholder {
+  visibility: hidden;
+}
+
+/* ### Category Html ### */
+.category-accordion {
+  font-size: 16px;
+}
+.category-accordion .title {
+  border-bottom: 1px solid var(--cloudy-gray);
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  color: var(--crimson);
+  font-weight: 400;
+  position: relative;
+  padding: 0 20px;
+}
+.category-accordion .title::after {
+  content: '\F282';
+  font-family: bootstrap-icons;
+  background-color: var(--lightpink);
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  transition: 0.35s;
+}
+.category-accordion .active::after {
+  background-color: transparent;
+  transform: rotateX(180deg);
+}
+.category-accordion .detail {
+  display: none;
+  line-height: 2em;
+  padding: 7px 20px;
+  background-color: var(--snow);
+}
+.category-accordion .detail a {
+  display: block;
+  padding: 2px 0;
+}

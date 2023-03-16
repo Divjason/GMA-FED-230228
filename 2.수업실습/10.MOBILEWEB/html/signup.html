@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Custom CSS & JS -->
+      <link rel="stylesheet" href="/css/style.css">
+      <script src="/js/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container signup">
+    <div class="signup-inner">
+      <!-- Main Header Include -->
+      <div class="main-header-include"></div>
+      <div class="main-header">
+        <button class="btn-back" onclick="history.back()">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <h2 class="logo" onclick="location.href='/html/front.html'">Today's Meal Kit</h2>
+        <div class="user-alarm">
+          <span>
+            <i class="bi bi-bell-fill"></i><em data-count="6"></em>
+          </span>
+        </div>
+      </div>
+      <div class="signup-content">
+        <div class="signup-field id-pw">
+          <span>이메일 <em>*</em></span>
+          <input type="email" placeholder="이메일 입력">
+        </div>
+        <div class="signup-field id-pw">
+          <span>비밀번호 <em>*</em></span>
+          <input type="email" placeholder="비밀번호 입력(영문, 숫자,특수기호 조합 8~16자리)">
+        </div>
+        <div class="signup-field id-pw">
+          <span>비밀번호 확인 <em>*</em></span>
+          <input type="email" placeholder="비밀번호 입력(영문, 숫자,특수기호 조합 8~16자리)">
+        </div>
+        <div class="signup-field birth">
+          <span>생년월일 <em>*</em></span>
+          <div>
+            <input type="text" placeholder="년도(4자리)">
+            <select>
+              <option value="">월</option>
+              <option value="">1월</option>
+              <option value="">2월</option>
+              <option value="">3월</option>
+              <option value="">4월</option>
+              <option value="">5월</option>
+              <option value="">6월</option>
+              <option value="">7월</option>
+              <option value="">8월</option>
+              <option value="">9월</option>
+              <option value="">10월</option>
+              <option value="">11월</option>
+              <option value="">12월</option>
+            </select>
+            <input type="text" placeholder="일">
+          </div>
+        </div>
+        <div class="signup-field phone">
+          <span>휴대전화 <em>*</em></span>
+          <div>
+            <input type="text" placeholder="휴대 전화번호 입력">
+            <button class="btn-getcode">인증번호 받기</button>
+          </div>
+        </div>
+        <div class="agree-term custom-chk">
+          <label>
+            <input type="checkbox"><em></em>모든 약관에 동의합니다.
+          </label>
+          <label>
+            <input type="checkbox"><em></em>(필수) 이용약관과 개인정보 수집 및 이용에 동의합니다.
+          </label>
+          <label>
+            <input type="checkbox"><em></em>(선택) 이메일 및 SMS 마케팅 정보 수신 동의합니다.
+          </label>
+        </div>
+        <button class="btn-primary btn-signup">가입하기</button>
+      </div>
+      <div class="gnb">
+        <a href="#"><i class="bi bi-list"></i><span>카테고리</span></a>
+        <a href="#"><i class="bi bi-search"></i><span>검색</span></a>
+        <a href="#"><i class="bi bi-house"></i><span>홈</span></a>
+        <a href="#"><i class="bi bi-person"></i><span>나의정보</span></a>
+        <a class="cart-alarm" href="#">
+          <b>
+            <i class="bi bi-cart"></i><em data-count="9"></em>
+          </b>
+          <span>장바구니</span></a>
+    </div>
+  </div>
+</body>
+</html>

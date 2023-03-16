@@ -1,0 +1,408 @@
+/* Import Local CSS */
+@import url('/css/reset.css');
+@import url('/css/variables.css');
+
+/* Common CSS */
+* {
+  font-family: var(--primary-kr);
+}
+body {
+  margin: 0;
+  color: var(--dark-black);
+  font-size: 14px;
+}
+.logo {
+  font-family: var(--logo-en);
+}
+
+/*Layout CSS */
+.container {
+  width: 100%;
+  position: relative;
+}
+
+/* Button CSS */
+.btn-primary {
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+}
+
+[class*=content] {
+  padding: 20px;
+  margin-bottom: 65px;
+}
+
+/* GNB CSS */
+.gnb {
+  border-top: 1px solid var(--cloudy-gray);
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.gnb a {
+  color: var(--dark-black);
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.gnb a .bi {
+  font-size: 22px;
+}
+.gnb a span {
+  display: block;
+  font-size: 13px;
+}
+
+/* Main CSS */
+.cart-alarm b {
+  position: relative;
+  width: 30px;
+  margin: auto;
+}
+.cart-alarm b em {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--royalblue);
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-alarm b em {
+  color: #fff;
+  top: 0;
+  right: -3px;
+}
+.cart-alarm b em:before {
+  content: attr(data-count);
+  font-style: normal;
+  font-size: 10px;
+  font-family: var(--primary-en);
+}
+
+/* Preloading Html */
+.preloading {
+  height: 100vh;
+}
+.preloading-inner {
+  height: inherit;
+  background: url('/images/preloading-back.jpg') no-repeat -110px center;
+  background-size: cover;
+}
+.heading-preloading-inner {
+  position: absolute;
+  top: 150px; left: 30px;
+}
+.heading-preloading-inner .logo {
+  font-size: 32px;
+  color: var(--crimson);
+}
+.slogan span {
+  display: block;
+  font-family: var(--secondary-kr);
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Signin Html */
+.signin {
+  height: 750px;
+}
+.signin-photo {
+  background: url('/images/signin-header.jpg') no-repeat;
+  height: 250px ;
+}
+
+/* Signin Header */
+.signin-header {
+  text-align: center;
+}
+.signin-header .logo {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.signin-header p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Signin Input */
+.input-field input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 20px;
+
+  border: 1px solid var(--cloudy-gray);
+  border-radius: 30px;
+}
+.input-field input:focus {
+  outline: none;
+  border-color: var(--yellowgreen);
+}
+.input-field input::placeholder {
+  color: var(--light-black);
+  transition: 0.35s;
+}
+.input-field input:focus::placeholder {
+  opacity: 0;
+}
+
+/* Signin Status */
+.status {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.custom-chk input[type=checkbox] {
+  display: none;
+}
+.custom-chk input[type=checkbox] + em {
+  width: 16px; height: 16px;
+  display: inline-block;
+  transform: translateY(5px);
+  margin-right: 3px;
+}
+.custom-chk input[type=checkbox] + em:before {
+  content: '\F26B';
+  font-family: bootstrap-icons;
+  font-style: normal;
+  color: var(--light-gray);
+  transform: translateY(-3px);
+  display: inline-block;
+}
+.custom-chk label input[type=checkbox]:checked + em::before {
+  color: var(--crimson);
+}
+.btn-signin {
+  background-color: var(--yellowgreen);
+}
+.join-member {
+  text-align: center;
+  margin: 15px 0;
+}
+.join-member a {
+  text-decoration: underline;
+}
+.easy-signin {
+  text-align: center;
+}
+.easy-signin span {
+  color: var(--light-gray);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.social-btn {
+  margin: 10px 0;
+}
+.social-btn a {
+  margin: 3px;
+}
+
+/* Signup Html */
+
+.main-header {
+  height: 80px;
+  background-color: var(--crimson);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-back {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  flex: 1;
+}
+.main-header .logo {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  flex: 6;
+}
+
+.user-alarm {
+  flex: 1;
+  font-size: 22px;
+  color: #fff;
+}
+.user-alarm span,
+.cart-alarm b {
+  position: relative;
+  width: 30px;
+  margin: auto;
+}
+.user-alarm span em,
+.cart-alarm b em {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--royalblue);
+  border-radius: 50%;
+  right:0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-alarm b em {
+  color: #fff;
+  top: 0;
+  right: -3px;
+}
+.user-alarm span em:before,
+.cart-alarm b em:before {
+  content: attr(data-count);
+  font-style: normal;
+  font-size: 10px;
+  font-family: var(--primary-en);
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+/* Content Padding */
+/* .signin-content,
+.signup-content {
+  padding: 20px;
+} */
+
+.signup {}
+.signup-inner {}
+.signup-content {}
+.signup-field {
+  margin-bottom: 10px;
+}
+.signup-field span {
+  display: block;
+}
+.signup-field span em {
+  color: var(--crimson);
+}
+.signup-field.id-pw input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--light-gray);
+  padding: 8px 0;
+}
+.signup-field.id-pw input::placeholder {
+  color: var(--light-gray);
+}
+.signup-field.birth {}
+.signup-field.birth div {
+  display: flex;
+  gap: 10px;
+}
+.signup-field.birth div > *,
+.signup-field.phone div > * {
+  /* flex: 1; */
+  width: 33.3333%;
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+  padding: 7px;
+  text-align: center;
+  color: var(--sliver-gray);
+}
+.signup-field.phone {}
+.signup-field.phone div {
+  display: flex;
+  gap: 10px;
+}
+.signup-field.phone div input {
+  flex: 7;
+}
+.btn-getcode {
+  flex: 3;
+  background-color: #fff;
+}
+.agree-term {
+  margin-bottom: 15px;
+}
+.agree-term label {
+  display: block;
+  font-size: 13px;
+}
+
+.btn-signup {
+  background-color: var(--crimson);
+}
+.signup-field.phone span,
+.signup-field.birth span {
+  margin-bottom: 5px;
+}
+
+.signup-field.id-pw input:focus,
+.signup-field.birth div > *:focus,
+.signup-field.phone div input:focus {
+  border-color: var(--yellowgreen);
+}
+.signup-field.id-pw input:focus::placeholder,
+.signup-field.birth div > *:focus::placeholder,
+.signup-field.phone div input:focus::placeholder {
+  visibility: hidden;
+}
+
+/* #### Category html #### */
+.category {}
+.category-inner {}
+.category-content {
+  padding: 0;
+}
+.category-accordion {
+  font-size: 16px;
+}
+.category-accordion .title {
+  border-bottom: 1px solid var(--cloudy-gray);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--crimson);
+  font-weight: 400;
+  position: relative;
+  padding: 0 20px;
+}
+.category-accordion .title:after,
+.user-shortcut a:after {
+  content: '\F282';
+  font-family: bootstrap-icons;
+  background-color: var(--crimson);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  right: 20px;
+  transition: 0.35s;
+}
+.category-accordion .title.active:after {
+  background-color: transparent;
+  transform: rotateX(180deg);
+}
+.category-accordion .detail {
+  display: none;
+  line-height: 2em;
+  padding: 7px 0;
+  background-color: var(--snow);
+  padding: 0 20px;
+}
+.category-accordion .detail a {
+  display: block;
+  padding: 2px 0;
+}

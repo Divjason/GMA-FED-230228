@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/css/style_1.css">
+  <script defer src="/js/script.js"></script>
+  <title>2.Signup Page</title>
+</head>
+<body>
+  <div class="container signup">
+    <div class="signup-inner">
+      <!-- Main Header Include -->
+      <div class="main-header-include"></div>
+      <!-- Main Header Include -->
+      <div class="signup-content">
+        <div class="signup-field id-pw">
+          <span>이메일 <em>*</em></span>
+          <input type="email" placeholder="이메일 입력" />
+        </div>
+        <div class="signup-field id-pw">
+          <span>비밀번호 <em>*</em></span>
+          <input type="password" placeholder="비밀번호 입력(영문, 숫자, 특수기호 조합 8~16자리)">
+        </div>
+        <div class="signup-field id-pw">
+          <span>비밀번호 확인 <em>*</em></span>
+          <input type="password" placeholder="비밀번호 입력(영문, 숫자, 특수기호 조합 8~16자리)">
+        </div>
+        <div class="signup-field birth">
+          <span>생년월일 <em>*</em></span>
+          <div>
+            <input type="text" placeholder="년도(4자리)">
+            <select>
+              <option value="">월</option>
+              <option value="">1월</option>
+              <option value="">2월</option>
+              <option value="">3월</option>
+              <option value="">4월</option>
+              <option value="">5월</option>
+              <option value="">6월</option>
+              <option value="">7월</option>
+              <option value="">8월</option>
+              <option value="">9월</option>
+              <option value="">10월</option>
+              <option value="">11월</option>
+              <option value="">12월</option>
+            </select>
+            <input type="text" placeholder="일">
+          </div>
+        </div>
+        <div class="signup-field phone">
+          <span>휴대전화 <em>*</em></span>
+          <div>
+            <input type="text" placeholder="휴대 전화번호 입력">
+            <button class="btn-getcode">인증번호 받기</button>
+          </div>
+        </div>
+        <div class="agree-term custom-chk">
+          <label>
+            <input type="checkbox"><em></em>모든 약관에 동의합니다.
+          </label>
+          <label>
+            <input type="checkbox"><em></em>(필수) 이용약관과 개인정보 수집 및 이용에 동의합니다.
+          </label>
+          <label>
+            <input type="checkbox"><em></em>(선택) 이메일 및 SMS 마케팅 정보 수신 동의합니다.
+          </label>
+        </div>
+        <button class="btn-primary btn-signup">가입하기</button>
+      </div>
+      <!-- GNB include -->
+      <div class="gnb-include"></div>
+      <!-- GNB include -->
+    </div>
+  </div>
+</body>
+</html>

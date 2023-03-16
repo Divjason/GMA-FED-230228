@@ -1,0 +1,22 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-black);
+}
+li {
+  list-style: none;
+}
+
+/* Font Size */
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
