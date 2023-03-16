@@ -1,0 +1,229 @@
+/* Reset */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+}
+main header {
+  width: 20%;
+  height: 100%;
+  padding: 10vh 5vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+
+  position: relative;
+  z-index: 3;
+  /* border: 10px solid pink; */
+}
+main section {
+  width: 80%; height: 100%;
+  padding-top: 140px;
+
+  display: flex;
+
+  position: relative;
+  z-index: 1;
+  /* border: 10px solid yellow; */
+}
+main nav {
+  position: absolute;
+  top: 10vh; right: 5vw;
+  z-index: 3;
+  /* border: 10px solid aqua; */
+}
+
+/* Header */
+header h1 {
+  font-size: 0px;
+  color: #fff;
+}
+h1 i {
+  font-size: 8vw;
+  margin-bottom: 25px;
+}
+h1 span {
+  font-weight: normal;
+  font-size: 1vw;
+  color: #888;
+}
+header address {
+  margin-left: -100px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #888;
+}
+
+/* nav */
+nav ul {
+  display: flex;
+}
+nav a {
+  color: #bbb;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+/* Section Contents */
+main article {
+  position: relative;
+  flex: 1;
+  padding: 70px 40px 100px;
+  opacity: 0.6;
+  transition: flex 1s, opacity 1s;
+  z-index: 1;
+  cursor: pointer;
+}
+main article::before {
+  content: "";
+  display: block;
+  width: 80%; height: 95%;
+  background: #444;
+  position: absolute;
+  top: 0; left: -200px;
+  opacity: 0;
+  transition: 1s;
+}
+main .inner {
+  width: 100%; height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+}
+main .txt {
+  width: 100%;
+  transition: 0.5s;
+}
+main h2 {
+  font-weight: normal;
+  font-size: 2vw;
+  color: #fff;
+
+  margin-bottom: 40px;
+  padding-top: 70px;
+  transition: 1s;
+}
+main h2::after {
+  content: "";
+  display: block;
+  width: 40px; height: 2px;
+  background-color: #777;
+  margin-top: 20px;
+  transition: 1.5s;
+}
+main p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Videos Contents */
+main figure {
+  width: 100%;
+  height: 15vh;
+  background-color: #777;
+
+  transform-origin: left center;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  filter: saturate(50%);
+  transition: 1s;
+}
+main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+/*Article : Hover*/
+main article:hover {
+  flex: 1.5;
+  opacity: 1;
+  z-index: 2;
+}
+main article:hover::before {
+  left: 0;
+  opacity: 1;
+}
+main article:hover .txt {
+  width: 75%;
+}
+main article:hover h2 {
+  font-size: 5vw;
+  padding-top: 0;
+}
+main article:hover h2::after {
+  width: 120px;
+  background-color: orange;
+}
+main article:hover figure {
+  height: 25vh;
+  filter: saturate(120%);
+  transform: translateY(3vh);
+}
+
+/* Aside */
+main aside {
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  position: absolute;
+  top: 0; left: -100%;
+  opacity: 0;
+  z-index: 2;
+
+  box-sizing: border-box;
+  padding: 20vh 7vw 14vh 20vw;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+main aside.on {
+  opacity: 1;
+  left: 0%;
+}
+main aside .txt {
+  width: 100%;
+  height: 50%;
+}
+main aside .txt h1 {
+  font-weight: normal;
+  font-size: 6vw;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+main aside .txt p {
+  font-size: 1.1vw;
+  color: #666;
+  margin-bottom: 60px;
+}
+main aside .txt span {
+cursor: pointer;
+color: orange;
+}
+main aside figure {
+  width: 72%;
+  height: 100%;
+}
+main aside figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
