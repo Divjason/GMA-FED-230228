@@ -301,7 +301,8 @@ body {
   position: relative;
   padding: 0 20px;
 }
-.category-accordion .title::after {
+.category-accordion .title::after,
+.user-shortcut a::after {
   content: '\F282';
   font-family: bootstrap-icons;
   background-color: var(--lightpink);
@@ -327,3 +328,225 @@ body {
   display: block;
   padding: 2px 0;
 }
+
+/* ### Search Html ### */
+.search-field input {
+  width: 100%;
+  padding: 8px;
+
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+  background: url('/images/search.svg') no-repeat center left 15px;
+  padding-left: 40px;
+}
+.search-recent {
+  margin: 25px 0;
+}
+.search-recent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-recent h3 {
+  color: var(--crimson);
+  font-size: 16px;
+}
+.search-recent .items {
+  margin: 15px 0;
+}
+.search-recent .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--cloudy-gray);
+  padding: 8px 0;
+}
+.btn-all-clear {
+  background-color: var(--light-gray);
+  border: none;
+  padding: 2px 8px;
+  border-radius: 20px;
+
+  color: #fff;
+  font-size: 11px;
+}
+.btn-clear {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--light-gray);
+}
+.search-increase .title h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.search-increase .title p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: var(--light-gray);
+  font-size: 14px;
+}
+.search-increase-list {
+  list-style: none;
+  counter-reset: rank;
+  line-height: 2em;
+  font-size: 15px;
+}
+.search-increase-list li::before {
+  content: counter(rank);
+  counter-increment: rank;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.search-increase-list li {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* ### Mypage Html ### */
+.mypage-content {
+  padding: 0;
+}
+.user-info {
+  padding: 20px;
+  display: flex;
+  gap: 5px;
+}
+.user-avatar {
+  flex: 1;
+}
+.user-avatar img {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+}
+.user-summary {
+  flex: 4;
+}
+.rating b {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--limegreen);
+}
+.rating span {
+  margin-left: 10px;
+  font-weight: 600;
+  color: var(--light-gray);
+}
+.rating .btn-setting {
+  float: right;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: var(--light-gray);
+}
+.nickname {
+  font-size: 18px;
+  margin: 9px 0;
+  font-weight: 600;
+}
+.point-coupon {
+  display: flex;
+  gap: 5px;
+}
+.point-coupon div {
+  background-color: var(--cloudy-gray);
+  border-radius: 20px;
+  padding: 2px 15px;
+
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.point-coupon div span {
+  font-size: 13px;
+  font-weight: normal;
+}
+.point-coupon div span:last-child {
+  color: var(--crimson);
+  font-weight: 600;
+}
+.point-coupon .point {
+  flex: 3;
+}
+.point-coupon .coupon {
+  flex: 1;
+}
+.delivering {
+  padding: 20px;
+}
+.delivering h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.delivering-items {
+  border: 1px solid var(--cloudy-gray);
+  padding: 15px;
+  border-radius: 5px;
+}
+.delivering-item .thum {
+  width: 60px; height: 60px;
+}
+.delivering-item .thum img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.delivering-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid var(--cloudy-gray);
+  padding: 10px 0;
+}
+.delivering-item:first-child {
+  padding-top: 0;
+}
+.delivering-item:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+.delivering-item span {
+  font-weight: normal;
+}
+.delivering-item b {
+  display: block;
+  color: var(--limegreen);
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 1px;
+}
+.banner img {
+  width: 100%;
+}
+.user-shortcut a {
+  display: block;
+  border-bottom: 1px solid var(--cloudy-gray);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.user-shortcut a::after {
+  transform: rotate(270deg);
+  background-color: #fff;
+}
+.user-shortcut a:last-child {
+  border: none;
+}
+.user-shortcut a span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+.user-shortcut a .bi {
+  width: 25px;
+  text-align: center;
+}
+.btn-signout {
+  color: var(--dark-black);
+}
+
+
