@@ -1,0 +1,48 @@
+HTML : 
+CSS : 
+- 내부 스타일시트 x
+- 외부 스타일시트 ㅇ
+- 인라인 스타일시트
+
+Atom / brakets
+
+<필수설치 프로그램>
+*Korean Language Pack
+*Live Server (alt + l + o)
+*indent rainbow
+*open in browser (alt + b)
+*Bracket Pair Colorizer
+*Auto rename tag
+*beautify
+*html css support
+
+<필수세팅 영역>
+Tab Size : 2
+Word Wrap : On
+Mouse Wheel Zoom : Check
+배경화면 설정 : ctrl + k + t
+
+a : 
+- 외부로 링크를 연동
+- 내부에서 원하는 문서 위치로 이동
+
+*목록태그
+- ul : Unorder List = 순서가 없는 목록태그
+- ol : Order List = 순서가 있는 목록태그
+- li : List = 목록태그 내부에 포함된 목록요소
+
+*테이블태그 : row = 행 / column = 열
+- table : 테이블 태그를 사용할 때에는 반드시 <table>태그를 가장 먼저!!
+- tr (table row) : 테이블에서 행을 만들 때 사용하는 태그
+- th (table header) : 행중에서 제목요소를 만들때 사용하는 태그
+- td (table data) : 행안에 들어가 있는 일반 셀 태그
+- caption : 테이블 제목을 생성할 때 사용하는 태그
+- colgroup : 여러개의 열을 하나로 묶어서 스타일을 적용할 때 사용하는 태그
+- col span : 여러개의 열을 하나로 묶을 때, 몇개의 열을 묶을지 결정하는 태그
+
+시멘틱 (*사전적 정의 : 의미가 있는 혹은 규칙성을 갖고 있는) 태그!!!
+HTML5
+
+
+
+
