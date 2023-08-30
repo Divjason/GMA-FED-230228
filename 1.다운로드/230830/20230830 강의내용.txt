@@ -1,0 +1,105 @@
+web editor :
+- visual studio code : vscode
+- atom
+- eclips
+- memo
+- notepad
+
+vscode > extensions(*확장프로그램)
+- 여러 개발자들이 편의를 위해서 만들어놓은 소스코드를 활용!!!!
+
+1) korean language pack
+2) material icon theme
+3) one dark pro
+4) live server : alt + L + O
+5) indent rainbow
+6) bracket pair colorizer
+7) auto rename tag
+8) HTML CSS Support
+9) HTML to CSS autocompletion
+10) prettier
+
+vscode > 기본 환경설정
+
+1.zoom : 마우스활용 화면 줌인.아웃
+2.tap size : 2
+3.word wrap : on
+4.emmet > variables > ko
+5.auto save delay : 500
+
+vscode .
+1.라이브서버 : alt + l + o
+2.화면밝기 : ctrl + k + t
+3.단축키 커스텀 : ctrl + k + s
+
+웹 페이지 : ex.네이버 / 쿠팡 / 마켓컬리 등
+1) HTML : 사람 뼈 / Hyper Text Markup language (*마크업언어) : 25개
+2) CSS : 사람 살 / Cascading Style Sheet (*스타일언어) : 화면 레이아웃 설계, 구성
+(*flex / grid)
++ jQuery + SCSS
+------------------------------------------------------------------------
+3) Javascript : 사람 뇌  (*프로그래밍언어)
+DOM : Document Object Model
+4) TS / React
+
+HTML 주요태그
+
+h: heading 태그
+> 글자 크기를 결정
+
+p : paragraph 태그
+> 문장의 단락 구성
+
+br : break 태그
+> 문장 단락 줄바꿈
+
+hr : horizontal rule 태그
+> 가로 줄 생성
+
+a : anchor 태그
+> 하이퍼링크(*특정 텍스트를 클릭했을 때, 어떤 경로로 이동하도록 해주는 것) 생성
+
+목록태그 : 반드시 자식태그로 <li> => list 단어의 약자
+1) ul 태그 : unorder list (*순서가 정해지지 않은 목록태그)
+2) ol 태그 : order list (*순서가 정해져있는 목록태그)
+3) 중첩목록태그 : ul > ol 
+
+git : 버전 관리 시스템!!!!
+- 개발자 컴퓨터(*로컬컴퓨터)에서만 관리할 수 있는 시스템
+
+git hub : 온라인으로 호스팅(*업로드)시켜서 데이터를 각 개발자들에게 공유할 수 있도록 도와주는 장치
+
+git 2(*이전버전과 호환할 수 없을 정도의 큰 업데이트).42(*소소한 버전 업데이트).0(*버그잡은 횟수)
+
+아이디 입력 : git config --global user.name "Divjason"
+
+이메일 입력 : git config --global user.email "sejinpark@tcocs.com"
+
+git 초기화 : git init  이건 쓰지 마세요!! => // (*initionalize)
+
+git & git Hub 연결 : git remote add origin // (*repository address)
+
+git remote add origin https://github.com/Divjason/firstcommit.git
+
+git & git Hub 연결확인 : git remote -v
+
+로컬컴퓨터에서 github로 호스팅이 가능한 데이터를 확인 : git status
+
+git hub에 호스팅 하기 위해서 git이라는 임시보관장소에 데이터를 담아놓는 명령어 : git add . // 현재 작업중인 루트폴더 안에 있는 모든 데이터를 전송하겠다 의미!!!
+
+git status
+
+git hub에 호스팅하는 버전명 :
+git commit -m "firstcommit"
+
+git hub에 호스팅하기 :
+git push origin master
+
+다른 사람의 repository를 제외시키고, 재링크하는 방법 :
+git remote set-url origin https://Divjason@github.com/Divjason/firstcommit
+
+기존 로컬컴퓨터에 연결된 또다른 git hub계정이 있는 경우 : 
+git remote remove origin
+
+다른 로컬컴퓨터로 호스팅된 데이터를 다운로드 받는 방법 :
+git clone git@github.com:Divjason/firstcommit.git secondcommit
